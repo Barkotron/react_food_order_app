@@ -1,9 +1,52 @@
+import Header from "./components/Header";
+import MealItem from "./components/mealItem";
+import logo from "./assets/logo.jpg";
+
 function App() {
+
+  const price = 8.99
   return (
     <>
-      <h1>You got this 💪</h1>
-      <p>Stuck? Not sure how to proceed?</p>
-      <p>Don't worry - we've all been there. Let's build it together!</p>
+      <Header></Header>
+      <div id="meals">
+        <MealItem
+          name="Test Item"
+          description="A delicious testy kind of item"
+          image={logo}
+          price={price}
+        ></MealItem>
+        <MealItem
+          name="Test Item 2"
+          description="A delicious testy kind of item with all kinds of extra shit to say on top of what was already said to make this much longer than the others"
+          image={logo}
+          price={price*2}
+        ></MealItem>
+        <MealItem
+          name="Test Item 3"
+          description="A delicious testy kind of item"
+          image={logo}
+          price={price*3}
+        ></MealItem>
+
+<MealItem
+          name="Test Item"
+          description="A delicious testy kind of item"
+          image={logo}
+          price={price}
+        ></MealItem>
+        <MealItem
+          name="Test Item 2"
+          description="A delicious testy kind of item with all kinds of extra shit to say on top of what was already said to make this much longer than the others"
+          image={logo}
+          price={price*2}
+        ></MealItem>
+        <MealItem
+          name="Test Item 3"
+          description="A delicious testy kind of item"
+          image={logo}
+          price={price*3}
+        ></MealItem>
+      </div>
     </>
   );
 }
