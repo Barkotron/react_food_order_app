@@ -6,7 +6,7 @@ export default function Header() {
   const cartCtx = useContext(CartContext);
 
   const totalCartItems = cartCtx.items.reduce((totalNumberOfItems, item) => {
-    return totalNumberOfItems + item.quanity;
+    return totalNumberOfItems + item.quantity;
   }, 0);
 
   return (
